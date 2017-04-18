@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Filters</title>
+  </head>
+  <body ng-app="MsgApp">
+  <h1>Custom Filters</h1>
+  <div ng-controller="MsgController">
+    <!-- Here Angular is evaluating strings in between of controller and end of controller and interpolating
+         them -->
+    Original Message is: {{ sayMessage() }} <br>
+    Loves: {{ sayLovesMessage() }}
+  </div>
+  </body>
+</html>
