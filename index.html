@@ -12,7 +12,10 @@
     <!-- Here Angular is evaluating strings in between of controller and end of controller and interpolating
          them -->
     Original Message is: {{ sayMessage() }} <br>
-    Loves: {{ sayLovesMessage() }}
+    Loves: {{ sayLovesMessage() }}<br>
+    Truth: {{ sayLovesMessage()| truth : 'healthy' : 'cookie' }}
+  <div><img style="width: 150px"ng-src="images/dragon_{{stateOfBeing}}.png"/></div>
+  <div><button ng-click="feedDragon()">Feed The Dragon</button></div>
   </div>
   </body>
 </html>
